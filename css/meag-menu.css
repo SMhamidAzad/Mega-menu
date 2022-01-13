@@ -1,0 +1,29 @@
+nav > ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+.drop-down{
+    display: none;
+    position: absolute;
+    background-color: blanchedalmond;
+}
+nav> ul >li:hover .drop-down{
+    display: block;
+}
+nav>ul>li:hover .drop-down.menu-bar{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 2em;
+}
+.menu-bar h3{
+    font-size: 15px;
+    color: blue;
+    margin-bottom: 0;
+}
